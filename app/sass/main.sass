@@ -1,0 +1,975 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0
+  box-sizing: border-box
+  font-family: $default-font
+  font-size: 14px
+  color: #000
+  width: 100%
+  border: none
+  font-weight: 500
+  &::placeholder
+    color: #000
+
+label
+  display: block
+
+select
+  width: 100%
+  padding: 0 10px
+  border: 1px solid #e5e5e5
+  height: 36px
+  appearance: auto
+  color: #666
+
+button
+  outline: none
+  border: none
+    radius: 0
+  padding: 0
+  margin: 0
+  cursor: pointer
+  transition: .3s ease
+
+  &:hover, &:focus
+    outline: none
+
+.container
+  max-width: 1230px
+  width: 100%
+  padding: 0 15px
+  margin: 0 auto
+  position: relative
+  display: flex
+  flex-wrap: wrap
+
+h1
+  font-size: 48px
+  font-family: $font
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+  span
+    display: block
+
+  img
+    margin: 0 0 0 23px
+    max-width: 164px
+
+h2
+  font-size: 48px
+  font-family: $font
+  color: #333
+
+.subtitle
+  margin: 0 0 36px
+  font-size: 18px
+  text-transform: uppercase
+  font-family: $font
+  color: #4b5758
+  width: 100%
+
+.logo
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 200px
+
+.lang
+  margin: 0 35px
+  text-transform: uppercase
+
+.btn-menu
+  display: flex
+  align-items: center
+  cursor: pointer
+
+.btn-menu-icon
+  margin: 0 0 0 30px
+  width: 23px
+  height: 12px
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-direction: column
+
+  span
+    width: 100%
+    height: 2px
+    background: #fff
+    display: block
+
+    &:nth-child(2)
+      width: 18px
+
+.box-title
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+
+.box-text
+  font-size: 19px
+  font-weight: 300
+  color: #4b5758
+  line-height: 1.58
+
+  p
+    margin: 0 0 30px
+
+    &:last-child
+      margin: 0
+
+.links
+  display: flex
+  align-items: center
+  color: #4b5758
+  font-size: 20px
+  font-family: $font
+
+  &:after
+    content: ''
+    display: inline-block
+    width: 49px
+    height: 1px
+    margin: 0 0 0 15px
+    background: $accent
+    transition: .3s ease
+
+  &:hover
+    &:after
+      width: 40px
+
+.links-grey
+  text-decoration: underline
+  color: #898989
+  font-size: 12px
+  font-weight: bold
+
+  &:hover
+    color: $accent
+
+.wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.slick-slide
+  outline: none
+
+.w-100
+  width: 100%
+
+.slick-arrow
+  position: absolute
+  top: 50%
+  transform: translate(0, -50%)
+  z-index: 1
+  opacity: 1
+  width: 16px
+  height: 30px
+  background: transparent
+  padding: 0
+  border: none
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  outline: none
+
+  svg
+    fill: #979797
+    transition: .3s ease
+
+  &:hover, &:focus
+    svg
+      fill: #000
+
+  &:before
+    display: none
+
+.slick-next
+  right: -40px
+
+
+.slick-prev
+  left: -40px
+  transform: translate(0, -50%) scaleX(-1)
+
+.slick-dots
+  width: 100%
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 38px 0 0
+
+  li
+    cursor: pointer
+    transition: .3s ease
+    margin: 0 18px 0 0
+    width: 15px
+    height: 15px
+    border-radius: 50%
+    background: #979797
+
+    button
+      display: none
+
+  .slick-active
+    background: $accent
+
+.links-white
+  color: #fff
+
+  &:hover
+    color: $accent
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-size: 24px
+  font-family: $font
+  border-radius: 32px
+  height: 70px
+  position: relative
+  overflow: hidden
+  transition: box-shadow .4s ease-in-out
+  padding: 0 53px
+
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    transition: transform .4s ease-in-out
+    transform: translateX(-110%) skewX(-15deg)
+    opacity: 1
+    display: block
+    background: hsla(36, 34%, 56%, .1)
+
+  &:hover
+    &:before
+      transform: translateX(110%) skewX(-15deg)
+
+
+.btn-white
+  background: #fff
+  color: #799ac9
+
+
+.btn-border-white
+  height: 51px
+  border: 1px solid #fff
+    radius: 0
+  color: #fff
+  font-size: 15px
+  padding: 0 45px
+  font-family: $default-font
+
+
+.btn-accent
+  background: $accent
+  color: #fff
+  font-size: 16px
+  font-weight: 600
+  font-family: $default-font
+  height: 42px
+  padding: 0 25px
+  text-transform: uppercase
+
+.btn-border
+  border: 1px solid #000
+    radius: 0
+  color: #000
+  height: 36px
+  font-size: 14px
+  padding: 0 10px
+  width: 100%
+
+
+.link-inline
+  display: inline
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+
+//header
+header
+  padding: 40px 0
+  position: absolute
+  z-index: 3
+  width: 100%
+  top: 0
+  left: 0
+  font-size: 20px
+  font-family: $font
+  color: #fff
+
+  .container
+    align-items: center
+    justify-content: space-between
+
+  .logo
+    max-width: 222px
+
+  a
+    color: #fff
+
+    &:hover
+      color: $accent
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 auto 0 43px
+  font-size: 16px
+
+  li
+    margin: 0 30px 0 0
+
+    &:last-child
+      margin: 0
+
+    a
+      color: #fff
+      position: relative
+      overflow: hidden
+
+      &:hover
+        color: #fff
+
+        span
+          transform: translateY(-100%)
+
+      span
+        display: inline-block
+        position: relative
+        transition: transform .2s ease-in-out
+
+        &:before
+          content: attr(data-hover)
+          top: 100%
+          left: 0
+          position: absolute
+          transform: translateZ(0)
+          width: 100%
+          height: 100%
+
+
+//main
+.main
+  z-index: 1
+  position: relative
+  color: #fff
+  padding: 150px 0 40px
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: #000
+    opacity: .7
+    z-index: 1
+
+  h1
+    max-width: 600px
+    width: 100%
+    margin: 0 auto
+
+  .container
+    z-index: 2
+  .btn
+    display: none
+
+.btn-down
+  display: none
+  position: absolute
+  right: -20px
+  bottom: 40px
+  color: #fff
+  align-items: center
+  justify-content: center
+  transform: rotate(90deg)
+  &:after
+    content: ''
+    display: inline-block
+    width: 45px
+    height: 2px
+    background: #fff
+    margin: 0 0 0 10px
+
+
+//main-slider
+.main-slider-box
+  height: 768px
+  width: 100%
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+  .container
+    height: 100%
+    align-items: center
+    justify-content: center
+
+.main-slider-box__img
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+//about
+.about
+  margin: 120px 0 70px
+
+  .box-title
+    max-width: 490px
+    width: 100%
+
+  .box-text
+    width: calc(100% - 490px)
+    padding: 0 0 0 64px
+
+
+.about-slider-img
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  border-radius: 6px
+  max-width: 390px
+  width: 100%
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.about-slider
+  margin: 54px 0 0
+
+//accommodation
+.accommodation-slide__box
+  max-width: 383px
+  width: 100%
+  margin: 0 auto
+  position: relative
+  overflow: hidden
+  border-radius: 6px
+  min-height: 520px
+  color: #fff
+  cursor: pointer
+
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, .7) 100%)
+    top: 0
+    left: 0
+    z-index: 1
+
+
+.hover-transform
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    transition: 1s ease
+    max-width: none
+  &:hover
+    img
+      transform: scale(1.05)
+
+.accommodation-slide__box-body
+  width: 100%
+  position: absolute
+  left: 0
+  bottom: 0
+  z-index: 1
+  padding: 20px 30px
+  font-size: 18px
+
+  h3
+    font-size: 30px
+    font-family: $font
+
+.accommodation-slide__box-text
+  margin: 20px 0 26px
+
+.accommodation-slider
+  margin: 32px 0 0
+
+//cta-box
+.cta-box
+  margin: 56px 0 87px
+
+.cta-box-wrapper
+  color: #fff
+  padding: 108px 73px 80px 93px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  background: #799ac9
+  width: 100%
+  border-radius: 6px
+
+  h2
+    color: #fff
+
+.cta-box-text
+  max-width: 610px
+  width: 100%
+  font-size: 24px
+
+  p
+    line-height: 1.5
+
+  h2
+    margin: 0 0 44px
+
+//sales
+.sales
+  .wrapper
+    margin: 33px 0 0
+
+.sales-box
+  margin: 0 0 24px
+  position: relative
+  overflow: hidden
+  height: 414px
+  width: 32.5%
+  border-radius: 6px
+  color: #fff
+  font-size: 18px
+
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, .7) 100%)
+    top: 0
+    left: 0
+    z-index: 1
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.sales-box-max
+  width: 66.5%
+
+.sales-box-body
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 100%
+  z-index: 1
+  padding: 25px 34px
+
+  span
+    display: block
+
+.sales-box-title
+  font-size: 24px
+  min-height: 56px
+
+.sales-box-text
+  margin: 60px 0 0
+
+//services
+.services
+  margin: 50px 0 92px
+
+  .wrapper
+    margin: 38px 0 0
+
+.services-content
+  max-width: 350px
+  width: 100%
+
+.services-slider
+  width: calc(100% - 430px)
+
+.services-item
+  position: relative
+  overflow: hidden
+  margin: 0 auto
+  max-width: 376px
+  width: 100%
+  border-radius: 6px
+  color: #fff
+
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, .7) 100%)
+    top: 0
+    left: 0
+    z-index: 1
+    opacity: 0
+
+  &:hover
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.75)
+
+    &:before
+      opacity: 1
+
+    .services-item-text
+      display: block
+
+.services-item__body
+  position: absolute
+  width: 100%
+  height: 100%
+  left: 0
+  top: 0
+  z-index: 1
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 30px 40px
+  font-size: 20px
+  font-weight: 600
+  text-align: center
+
+
+.services-item-title
+  margin: auto
+  display: block
+  text-align: center
+  font-size: 30px
+  font-weight: 800
+  text-shadow: 1.1px 6.9px 28.8px #000000
+
+.services-item-text
+  display: none
+  transition: .3s ease
+
+.services-box
+  width: 100%
+  display: flex
+  align-items: flex-start
+  padding: 0 0 20px
+  margin: 0 0 20px
+  border-bottom: 2px solid #f9f9f9
+  font-size: 14px
+
+  &:last-child
+    margin: 0
+    padding: 0
+    border: none
+
+  h3
+    font-weight: 800
+    text-transform: uppercase
+    margin: 0 0 15px
+
+  .links-grey
+    margin: 11px 0 0
+
+.services-box-icon
+  display: flex
+  align-items: center
+  width: 40px
+  min-width: 40px
+  margin: 0 18px 0 0
+
+//footer
+footer
+  background: #171714
+  color: #fff
+  padding: 26px 0 77px
+  font-size: 14px
+
+  .container
+    align-items: flex-end
+    justify-content: space-between
+
+  a
+    color: #fff
+
+  .phone
+    font-size: 24px
+    font-weight: 500
+
+  p
+    margin: 0 0 10px
+
+    &:last-child
+      margin: 0
+
+
+.list-social
+  display: flex
+  align-items: center
+
+  li
+    margin: 0 40px 0 0
+
+    &:last-child
+      margin: 0
+
+    a
+      fill: #fff
+      width: 30px
+      height: 30px
+
+//booking-section
+.booking-section
+  width: 100%
+  margin: -130px 0 0
+  position: relative
+  z-index: 2
+
+.booking-panel
+  background: rgba(#fff, .15)
+  width: 100%
+  padding: 24px 27px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+  button
+    border-radius: 0
+
+
+.booking-panel__text
+  color: #fff
+  font-size: 14px
+  font-family: $font
+  margin: 0 auto 0 0
+
+  h3
+    font-size: 16px
+    text-transform: uppercase
+    margin: 0 0 9px
+
+.filter-box
+  background: #fff
+  margin: 0 19px 0 0
+  height: 42px
+  position: relative
+  padding: 5px 10px
+  font-size: 12px
+  min-width: 214px
+
+  .input-text
+    display: block
+    color: #ccc
+
+.input-icon
+  position: absolute
+  right: 10px
+  top: 50%
+  transform: translate(0, -50%)
+  width: 20px
+  height: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.dropdown-wrapper
+  position: relative
+
+.dropdown-menu
+  position: absolute
+  z-index: 2
+  bottom: calc(100% + 2px)
+  background: #fff
+  padding: 20px
+  display: none
+  box-shadow: 0 5px 12px rgba(#000, .15)
+  p
+    color: #ccc
+  select
+    margin: 10px 0 0
+  .btn-add
+    margin: 10px 0 0
+
+.select-add
+  display: none
+
+
+//mobile-menu
+.mobile-menu
+  display: none
+  position: fixed
+  right: 0
+  top: 0
+  max-width: 300px
+  width: 100%
+  height: 100%
+  padding: 30px
+  overflow-y: auto
+  background: #fff
+  z-index: 4
+  .logo
+    max-width: none
+    margin: 30px auto
+  .menu
+    margin: 0 0 30px
+    font-size: 14px
+    text-transform: uppercase
+    font-weight: 500
+    li
+      width: 100%
+      margin: 0 0 15px
+      &:last-child
+        margin: 0
+      a
+        color: $blue
+        &:hover
+          color: $accent
+  .phone
+    font-size: 22px
+    font-weight: bold
+    color: $blue
+
+
+.btn-close
+  cursor: pointer
+  position: relative
+  margin: 0 0 0 auto
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 20px
+  height: 20px
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    background: #000
+    width: 2px
+    height: 100%
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+@import "media"
+// Всегда в конце

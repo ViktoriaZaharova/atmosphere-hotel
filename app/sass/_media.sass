@@ -1,0 +1,368 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1280px)
+  .slick-prev
+    left: 20px
+
+  .slick-next
+    right: 20px
+    
+  .slick-arrow
+    background: #fff
+    width: 40px
+    height: 40px
+    padding: 10px
+
+  .about-slider-img, .accommodation-slide__box, .services-item
+    max-width: 96%
+
+  .accommodation-slide__box
+    img
+      width: auto
+
+  .accommodation-slide__box-body
+    padding: 20px
+
+@media only screen and (max-width: 1200px)
+  .booking-panel__text
+    width: 100%
+    margin: 0 0 10px
+    text-align: center
+
+  .filter-box
+    margin: 0 auto
+
+  .cta-box-wrapper
+    padding: 40px 30px
+
+  .services-item__body
+    padding: 20px
+    font-size: 16px
+
+  .services-slider
+    width: calc(100% - 350px)
+
+  .list-social li
+    margin: 0 20px 0 0
+
+  .btn-border-white
+    padding: 0 30px
+
+  footer
+    padding: 30px 0
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .lang
+    margin: 0 20px
+
+  header
+    padding: 20px 0
+    font-size: 16px
+
+    .logo
+      max-width: 150px
+
+  .menu
+    margin: 0 auto
+
+    li
+      margin: 0 20px 0 0
+
+  .booking-panel
+    background: #fff
+    box-shadow: 0px 9px 27px 0 rgba(0, 0, 0, 0.2)
+    border-radius: 16px
+    align-items: flex-end
+
+    .booking-panel__text
+      color: #799ac9
+
+  .filter-box
+    height: auto
+    padding: 0 10px
+    .input-text
+      color: #799ac9
+    input
+      border: 2px solid #d6d8dc
+      border-radius: 6px
+      margin: 10px 0 0
+      padding: 0 20px
+      height: 40px
+      color: #799ac9
+      background: #fff url("../img/down-arrow.svg") no-repeat 95% center
+        size: 10px
+
+  .input-icon
+    display: none
+
+  h2
+    font-size: 30px
+
+  .subtitle
+    margin: 0 0 24px
+
+  .about .box-title
+    max-width: 300px
+
+  .about .box-text
+    width: calc(100% - 300px)
+    padding: 0 0 0 30px
+
+  .accommodation-slide__box-text
+    margin: 15px 0
+    font-size: 12px
+
+  .accommodation-slide__box-body h3
+    font-size: 18px
+
+  .links
+    font-size: 16px
+
+  .cta-box-text
+    font-size: 18px
+    max-width: 440px
+
+  .btn
+    height: 50px
+    font-size: 15px
+    padding: 0 30px
+
+  .sales-box-body
+    padding: 20px
+
+  .sales-box-title
+    font-size: 20px
+
+  .sales-box-text
+    margin: 30px 0 0
+
+  .footer-box-doc
+    width: 100%
+    margin: 20px 0 0
+    text-align: center
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 920px)
+  .booking-panel
+    justify-content: space-between
+    button
+      width: 100%
+      margin: 33px auto 0
+      border-radius: 6px
+
+  .filter-box
+    width: 32%
+    margin: 0
+
+  .sales-box-max, .sales-box
+    width: 49%
+    font-size: 16px
+
+  .services-content
+    max-width: none
+
+  .services-slider
+    width: 100%
+    margin: 20px 0 0
+    padding: 0
+
+@media only screen and (max-width: 768px)
+  header
+    .menu
+      display: none
+
+    .logo
+      margin: 0 auto 0 0
+
+  .main-slider-box
+    height: 500px
+
+  h1
+    font-size: 30px
+    span
+      font-size: 24px
+    img
+      max-width: 80px
+      margin: 0 0 0 10px
+
+  .main h1
+    max-width: 400px
+
+  .filter-box
+    width: 48%
+    margin: 0 0 20px
+    padding: 0
+    min-width: auto
+    &:last-child
+      width: 100%
+      max-width: none
+
+  .dropdown-wrapper
+    width: 100%
+
+  .booking-panel
+    button
+      margin: 0 auto
+
+  .box-text
+    font-size: 16px
+    p
+      margin: 0 0 20px
+
+  .about
+    margin: 100px 0 40px
+    .box-title
+      max-width: none
+      margin: 0 0 30px
+    .box-text
+      padding: 0
+      width: 100%
+
+  .cta-box-text
+    max-width: none
+    margin: 0 0 54px
+    font-size: 16px
+    h2
+      margin: 0 0 32px
+
+  .cta-box
+    margin: 50px 0
+    .btn
+      margin: 0 auto
+
+  .cta-box-wrapper
+    padding: 30px 50px
+
+  .services-item-title
+    font-size: 24px
+
+  .list-social
+    width: 100%
+    margin: 20px 0 0
+    justify-content: center
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 630px)
+  footer
+    text-align: center
+    .btn
+      display: none
+    .container
+      flex-direction: column
+      align-items: center
+    .logo
+      margin: 0 auto 20px
+
+
+@media only screen and (max-width: 576px)
+  .btn-menu-text
+    display: none
+
+  .btn-menu-icon
+    margin: 0
+
+  header
+    .logo
+      width: 105px
+      height: 103px
+      background: url("../img/logo-mobile.png") no-repeat center
+        size: contain
+
+      img
+        display: none
+
+  .main
+    padding: 200px 0 140px
+    &:before
+      opacity: .5
+    .btn
+      text-transform: uppercase
+      display: flex
+      border-radius: 30px
+      margin: 0 0 100px
+    .container
+      height: auto
+      align-items: flex-start
+      justify-content: flex-start
+
+    h1
+      margin: 0 0 100px
+
+
+  .btn-down
+    display: flex
+
+  .main-slider-box
+    height: auto
+
+  .booking-panel__text
+    display: none
+
+  .about-slider-img, .accommodation-slide__box
+    max-width: none
+
+  .accommodation-slide__box
+    min-height: 300px
+    img
+      width: 100%
+
+  .accommodation-slider
+    .slick-arrow
+      display: none
+
+  h2
+    font-size: 24px
+
+  .links
+    &:after
+      width: 30px
+    &:hover
+      &:after
+        width: 20px
+
+  .cta-box-wrapper
+    padding: 30px
+
+  .sales-box
+    width: 100%
+    margin: 0
+    display: none
+    &:first-child
+      display: block
+
+@media only screen and (max-width: 480px)
+  h1
+    font-size: 26px
+    img
+      max-width: 50px
+
+  .subtitle
+    margin: 0 0 15px
+    font-size: 16px
+
+  .services-item
+    max-width: none
+
+  .services-content
+    display: none
+
+  .services-slider
+    margin: 0
+
+  .services
+    margin: 50px 0
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 420px)
+  header
+    .logo
+      width: 60px
+      height: 55px

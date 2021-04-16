@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+  <meta charset="utf-8">
+  <title>Отель Атмосфера у самого берега моря</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+  <ul class="menu">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="#">Об отеле</a></li>
+    <li><a href="#">Номера</a></li>
+    <li><a href="#">Акции</a></li>
+    <li><a href="#">Ресторан "Море-мясо"</a></li>
+    <li><a href="#">Кафе "Быстрая устрица"</a></li>
+    <li><a href="#">Бар "Атмосфера"</a></li>
+    <li><a href="#">События</a></li>
+    <li><a href="#">Вакансии</a></li>
+    <li><a href="#">Документы</a></li>
+    <li><a href="#">Забронировать номер</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+  <a href="tel:+78003006550" class="phone">8 800 300 65 50</a>
+</div>
+
+<header>
+  <div class="container">
+    <a href="index.html" class="logo"><img src="img/logo-header.png" alt=""></a>
+    <ul class="menu">
+      <li><a href="#"><span data-hover="Отель">Отель</span></a></li>
+      <li><a href="#"><span data-hover="Номера">Номера</span></a></li>
+      <li><a href="#"><span data-hover="Рестораны">Рестораны</span></a></li>
+      <li><a href="#"><span data-hover="Акции">Акции</span></a></li>
+    </ul>
+
+    <a href="tel:+78003006550" class="phone">8 800 300 65 50</a>
+    <a href="#" class="lang">en</a>
+    <div class="btn-menu">
+      <div class="btn-menu-text">Меню</div>
+      <div class="btn-menu-icon">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="main-slider w-100">
+    <div class="slide">
+      <div class="main-slider-box">
+        <img src="img/bg1.jpg" alt="" class="main-slider-box__img">
+        <div class="container">
+          <h1>Отель Атмосфера <img src="img/stars.png" alt="">
+            <span>у самого берега моря</span>
+          </h1>
+          <a href="#" class="btn btn-border-white">подробнее</a>
+
+          <a href="#about" class="btn-down go_to">Вниз</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<div class="booking-section">
+  <div class="container">
+    <form method="post" class="booking-panel">
+      <div class="booking-panel__text">
+        <h3>Бронирование номеров</h3>
+        <p>100% гарантия лучшей цены!</p>
+      </div>
+      <label class="filter-box">
+        <span class="input-text">Заезд</span>
+        <input type="text" class="from date-input" name="from" value="19.02.2021">
+        <span class="input-icon"><img src="img/calendar.svg" alt=""></span>
+      </label>
+
+      <label class="filter-box">
+        <span class="input-text">Выезд</span>
+        <input type="text" class="to date-input" name="to" value="20.02.2021">
+        <span class="input-icon"><img src="img/calendar.svg" alt=""></span>
+      </label>
+
+      <div class="filter-box dropdown-wrapper">
+        <span class="input-text">Гости</span>
+        <input type="text" name="val" value="1 взрослый, 0 детей">
+        <span class="input-icon"><img src="img/man-user.svg" alt=""></span>
+        <div class="dropdown-menu">
+          <p>Кол-во взрослых</p>
+          <select name="select">
+            <option value="1 взрослый">1 взрослый</option>
+            <option value="2 взрослых">2 взрослых</option>
+            <option value="3 взрослых">3 взрослых</option>
+            <option value="4 взрослых">4 взрослых</option>
+          </select>
+
+          <a href="#" class="btn-add btn btn-border">+ Добавить ребенка</a>
+          <select name="select" class="select-add">
+            <option value="Ребенок 1 год">Ребенок 1 год</option>
+            <option value="Ребенок 1 год">Ребенок 1 год</option>
+            <option value="Ребенок 1 год">Ребенок 1 год</option>
+            <option value="Ребенок 1 год">Ребенок 1 год</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-accent">найти номер</button>
+    </form>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="wrapper">
+      <div class="subtitle">ОБ ОТЕЛЕ</div>
+      <div class="box-title">
+
+        <h2>Гостиничный комплекс
+          “Атмосфера”</h2>
+      </div>
+      <div class="box-text">
+        <p>Гостиничный комплекс "Атмосфера" расположился в центре города Геленджик в пешей доступности от набережной
+          курорта.
+          Здания гостиничного комплекса европейского уровня, отвечают требованиям как самого взыскательного
+          путешественника,
+          так и деловых людей, стремящихся получить качественный и комфортный отдых.</p>
+
+        <p>Гостиничный комплекс предлагает к Вашим услугам девять категорий номеров вместимостью от одного до шести
+          человек.
+          Номера оснащены необходимой для полноценного отдыха мебелью и дополнительными принадлежностями. На территории
+          гостиничного комплекса ежедневно работает 2 кафе, ресторан и открытый бассейн с пресной водой.</p>
+      </div>
+    </div>
+
+    <div class="about-slider w-100">
+      <div class="slide">
+        <a href="img/photo1.jpg" class="about-slider-img" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+      <div class="slide">
+        <a href="img/photo1.jpg" class="about-slider-img" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+      <div class="slide">
+        <a href="img/photo1.jpg" class="about-slider-img" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+      <div class="slide">
+        <a href="img/photo1.jpg" class="about-slider-img" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="accommodation">
+  <div class="container">
+    <div class="subtitle">НОМЕРА</div>
+    <div class="box-title">
+      <h2>Проживание</h2>
+
+      <a href="#" class="links">Все номера</a>
+    </div>
+
+    <div class="accommodation-slider w-100">
+      <div class="slide">
+        <div class="accommodation-slide__box hover-transform">
+          <img src="img/photo2.jpg" alt="">
+          <div class="accommodation-slide__box-body">
+            <h3>Стандарт 2-местный с видом на море</h3>
+            <div class="accommodation-slide__box-text">
+              <p>16 м2 с одной большой двуспальной или двумя односпальными крова</p>
+            </div>
+            <a href="#" class="links-white">подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="accommodation-slide__box hover-transform">
+          <img src="img/photo2.jpg" alt="">
+          <div class="accommodation-slide__box-body">
+            <h3>Стандарт 2-местный с видом на море</h3>
+            <div class="accommodation-slide__box-text">
+              <p>16 м2 с одной большой двуспальной или двумя односпальными крова</p>
+            </div>
+            <a href="#" class="links-white">подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="accommodation-slide__box hover-transform">
+          <img src="img/photo2.jpg" alt="">
+          <div class="accommodation-slide__box-body">
+            <h3>Стандарт 2-местный с видом на море</h3>
+            <div class="accommodation-slide__box-text">
+              <p>16 м2 с одной большой двуспальной или двумя односпальными крова</p>
+            </div>
+            <a href="#" class="links-white">подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="accommodation-slide__box hover-transform">
+          <img src="img/photo2.jpg" alt="">
+          <div class="accommodation-slide__box-body">
+            <h3>Стандарт 2-местный с видом на море</h3>
+            <div class="accommodation-slide__box-text">
+              <p>16 м2 с одной большой двуспальной или двумя односпальными крова</p>
+            </div>
+            <a href="#" class="links-white">подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-box">
+  <div class="container">
+    <div class="cta-box-wrapper">
+      <div class="cta-box-text">
+        <h2>Подберите номер для <br>
+          проживания</h2>
+        <p>Забронируйте номер прямо сейчас и начните свой
+          удивительный отдых в Геленджике, полный открытий
+          и впечатлений.</p>
+      </div>
+      <a href="#" class="btn btn-white">Бронирование</a>
+    </div>
+  </div>
+</div>
+
+<section class="sales">
+  <div class="container">
+    <div class="subtitle">АКЦИИ</div>
+    <div class="box-title">
+      <h2>Специальные предложения</h2>
+      <a href="#" class="links">Все акции</a>
+    </div>
+
+    <div class="wrapper">
+      <a href="#" class="sales-box sales-box-max hover-transform">
+        <img src="img/img1.jpg" alt="">
+        <span class="sales-box-body">
+          <span class="sales-box-title">Скидка 25% на <br> майские праздники</span></span>
+      </a>
+
+      <a href="#" class="sales-box hover-transform">
+        <img src="img/img2.jpg" alt="">
+        <span class="sales-box-body">
+          <span class="sales-box-title text-center">Предложение для
+молодоженов</span>
+          <span class="sales-box-text">Специально для молодоженов отель Атмосфера предлагает программы по комплексному уходу за внешностью.</span>
+        </span>
+      </a>
+
+      <a href="#" class="sales-box hover-transform">
+        <img src="img/img3.jpg" alt="">
+        <span class="sales-box-body">
+          <span class="sales-box-title">Раннее бронирование
+Лето 2021</span>
+        </span>
+      </a>
+
+      <a href="#" class="sales-box hover-transform">
+        <img src="img/img4.jpg" alt="">
+        <span class="sales-box-body">
+          <span class="sales-box-title">Весь июнь скидка 30%</span>
+        </span>
+      </a>
+
+      <a href="#" class="sales-box hover-transform">
+        <img src="img/img2.jpg" alt="">
+        <span class="sales-box-body">
+          <span class="sales-box-title">Предложение для
+молодоженов</span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="container">
+    <div class="subtitle">УСЛУГИ КОМПЛЕКСА</div>
+    <h2>Вам также будет интересно</h2>
+    <div class="wrapper">
+      <div class="services-content">
+        <div class="services-box">
+          <div class="services-box-icon"><img src="img/icon1.png" alt=""></div>
+          <div class="services-box-text">
+            <h3>УДОБНОЕ РАСПОЛОЖЕНИЕ</h3>
+            <p>Отель находится в 50 метрах от набержной
+              Геленджика</p><a href="#" class="links-grey">открыть карту</a>
+          </div>
+        </div>
+        <div class="services-box">
+          <div class="services-box-icon"><img src="img/icon2.png" alt=""></div>
+          <div class="services-box-text">
+            <h3>ЗАВТРАКИ В РЕСТОРАНЕ</h3>
+            <p>Бесплатный завтрак включен в стоимость
+              номера</p>
+          </div>
+        </div>
+        <div class="services-box">
+          <div class="services-box-icon"><img src="img/icon3.png" alt=""></div>
+          <div class="services-box-text">
+            <h3>БЕСПЛАТНАЯ ПАРКОВКА</h3>
+            <p>Парковка на прилегающей к отелю
+              территории</p>
+          </div>
+        </div>
+        <div class="services-box">
+          <div class="services-box-icon"><img src="img/icon4.png" alt=""></div>
+          <div class="services-box-text">
+            <h3>ТРАНСФЕР ДЛЯ ГОСТЕЙ</h3>
+            <p>Трансфер в одну сторону в / из Аэропорт
+              (при проживании от 3х суток)</p>
+          </div>
+        </div>
+        <div class="services-box">
+          <div class="services-box-icon"><img src="img/icon5.png" alt=""></div>
+          <div class="services-box-text">
+            <h3>ОТКРЫТЫЙ БАССЕЙН</h3>
+            <p>Открытый бассейн на территории отеля
+              (в летнее время)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-slider">
+        <div class="slide">
+          <a href="#" class="services-item hover-transform">
+            <img src="img/img5.jpg" alt="">
+            <span class="services-item__body">
+              <span class="services-item-title">Ресторан
+“Атмосфера”</span>
+              <span class="services-item-text">Морской дьявол - азиатская и
+европейская кухни</span>
+            </span>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="#" class="services-item hover-transform">
+            <img src="img/img6.jpg" alt="">
+            <span class="services-item__body">
+              <span class="services-item-title">Кафе
+“Морской дьявол”</span>
+              <span class="services-item-text">Морской дьявол - азиатская и
+европейская кухни</span>
+            </span>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="#" class="services-item hover-transform">
+            <img src="img/img5.jpg" alt="">
+            <span class="services-item__body">
+              <span class="services-item-title">Ресторан
+“Атмосфера”</span>
+              <span class="services-item-text">Морской дьявол - азиатская и
+европейская кухни</span>
+            </span>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="#" class="services-item hover-transform">
+            <img src="img/img6.jpg" alt="">
+            <span class="services-item__body">
+              <span class="services-item-title">Кафе
+“Морской дьявол”</span>
+              <span class="services-item-text">Морской дьявол - азиатская и
+европейская кухни</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <a href="index.html" class="logo"><img src="img/logo-white.png" alt=""></a>
+    <div class="footer-box">
+      <a href="tel:+78003006550" class="phone">8 800 300 65 50</a>
+      <p>Геленджик, Улица Шмидта, 1</p>
+    </div>
+
+    <a href="#" class="btn btn-border-white">Обратная связь</a>
+
+    <ul class="list-social">
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#socials__instagram"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#socials__fb"></use>
+        </svg>
+      </a></li>
+    </ul>
+
+    <div class="footer-box footer-box-doc">
+      <p>© 2021 Отель Атмосфера ****</p>
+      <p>Создание и поддержка сайта: <a href="#" class="link-inline">Azmarin.Ru</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

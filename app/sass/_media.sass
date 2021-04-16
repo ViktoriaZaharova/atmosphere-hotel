@@ -333,9 +333,7 @@
   .sales-box
     width: 100%
     margin: 0
-    display: none
-    &:first-child
-      display: block
+    max-width: none
 
 @media only screen and (max-width: 480px)
   h1
@@ -355,6 +353,8 @@
 
   .services-slider
     margin: 0
+    .slick-arrow
+      top: 70%
 
   .services
     margin: 50px 0

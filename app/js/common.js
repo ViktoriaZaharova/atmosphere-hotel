@@ -1,8 +1,10 @@
 $('.main-slider').slick({
     slidesToShow: 1,
     fade: true,
-    arrows: false
-})
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+});
 
 $('.about-slider').slick({
     infinite: true,
@@ -60,6 +62,23 @@ $('.services-slider').slick({
     ]
 });
 
+// slick active
+$(window).on('load resize', function() {
+    if ($(window).width() < 576) {
+        $('.sales-slider:not(.slick-initialized)').slick({
+            infinite: true,
+            slidesToShow: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            fade: true
+        });
+    } else {
+        $(".sales-slider.slick-initialized").slick("unslick");
+    }
+});
+// slick active
+
 $('.btn-add').on('click', function (e) {
     e.preventDefault();
     $(this).siblings('.select-add').fadeIn();
@@ -96,6 +115,15 @@ $('.go_to').click(function (e) {
         }, 500);
     }
     return false;
+});
+
+$(window).scroll(function () {
+    var heightMain = $('main').height();
+    if ($(this).scrollTop() > heightMain) {
+        $('header').addClass('fixed');
+    } else {
+        $('header').removeClass('fixed');
+    }
 });
 
 function initDatepicker() {

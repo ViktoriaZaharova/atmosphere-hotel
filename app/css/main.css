@@ -486,6 +486,11 @@ header {
     header a:hover {
       color: #e6b361; }
 
+header.fixed {
+  padding: 10px 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8); }
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -801,7 +806,12 @@ header {
     .services-item:hover:before {
       opacity: 1; }
     .services-item:hover .services-item-text {
-      display: block; }
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); }
+    .services-item:hover .services-item-title {
+      -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -30px, 0);
+              transform: translate3d(0, -50%, 0) translate3d(0, -30px, 0); }
 
 .services-item__body {
   position: absolute;
@@ -831,12 +841,18 @@ header {
   text-align: center;
   font-size: 30px;
   font-weight: 800;
-  text-shadow: 1.1px 6.9px 28.8px #000000; }
+  text-shadow: 1.1px 6.9px 28.8px #000000;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0); }
 
 .services-item-text {
-  display: none;
-  -webkit-transition: .3s ease;
-  transition: .3s ease; }
+  opacity: 0;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+  -webkit-transform: translate3d(0, 10px, 0);
+          transform: translate3d(0, 10px, 0); }
 
 .services-box {
   width: 100%;
@@ -1001,7 +1017,6 @@ footer {
   position: fixed;
   right: 0;
   top: 0;
-  max-width: 300px;
   width: 100%;
   height: 100%;
   padding: 30px;
@@ -1009,13 +1024,14 @@ footer {
   background: #fff;
   z-index: 4; }
   .mobile-menu .logo {
-    max-width: none;
+    max-width: 200px;
     margin: 30px auto; }
   .mobile-menu .menu {
     margin: 0 0 30px;
     font-size: 14px;
     text-transform: uppercase;
-    font-weight: 500; }
+    font-weight: 500;
+    text-align: center; }
     .mobile-menu .menu li {
       width: 100%;
       margin: 0 0 15px; }
@@ -1028,7 +1044,8 @@ footer {
   .mobile-menu .phone {
     font-size: 22px;
     font-weight: bold;
-    color: #799ac9; }
+    color: #799ac9;
+    text-align: center; }
 
 .btn-close {
   cursor: pointer;
@@ -1333,9 +1350,7 @@ footer {
   .sales-box {
     width: 100%;
     margin: 0;
-    display: none; }
-    .sales-box:first-child {
-      display: block; } }
+    max-width: none; } }
 
 @media only screen and (max-width: 480px) {
   h1 {
@@ -1351,6 +1366,8 @@ footer {
     display: none; }
   .services-slider {
     margin: 0; }
+    .services-slider .slick-arrow {
+      top: 70%; }
   .services {
     margin: 50px 0; } }
 

@@ -530,18 +530,7 @@ header {
 .main {
   z-index: 1;
   position: relative;
-  color: #fff;
-  padding: 150px 0 40px; }
-  .main:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: .7;
-    z-index: 1; }
+  color: #fff; }
   .main h1 {
     max-width: 600px;
     width: 100%;
@@ -575,7 +564,19 @@ header {
 
 .main-slider-box {
   height: 768px;
-  width: 100%; }
+  width: 100%;
+  padding: 150px 0 40px;
+  position: relative; }
+  .main-slider-box:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .6;
+    z-index: 1; }
   .main-slider-box img {
     width: 100%;
     height: 100%;
@@ -1285,33 +1286,32 @@ footer {
       background-size: contain; }
     header .logo img {
       display: none; }
-  .main {
-    padding: 200px 0 140px; }
-    .main:before {
-      opacity: .5; }
-    .main .btn {
-      text-transform: uppercase;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      border-radius: 30px;
-      margin: 0 0 100px; }
-    .main .container {
-      height: auto;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start; }
-    .main h1 {
-      margin: 0 0 100px; }
+  .main:before {
+    opacity: .5; }
+  .main .btn {
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 30px;
+    margin: 0 0 100px; }
+  .main .container {
+    height: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .main h1 {
+    margin: 0 0 100px; }
   .btn-down {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
   .main-slider-box {
-    height: auto; }
+    height: auto;
+    padding: 200px 0 140px; }
   .booking-panel__text {
     display: none; }
   .about-slider-img, .accommodation-slide__box {

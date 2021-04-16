@@ -469,18 +469,9 @@ header
   z-index: 1
   position: relative
   color: #fff
-  padding: 150px 0 40px
 
-  &:before
-    content: ''
-    position: absolute
-    left: 0
-    top: 0
-    width: 100%
-    height: 100%
-    background: #000
-    opacity: .7
-    z-index: 1
+
+
 
   h1
     max-width: 600px
@@ -514,7 +505,18 @@ header
 .main-slider-box
   height: 768px
   width: 100%
-
+  padding: 150px 0 40px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: #000
+    opacity: .6
+    z-index: 1
   img
     width: 100%
     height: 100%

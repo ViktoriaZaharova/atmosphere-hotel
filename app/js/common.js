@@ -1,3 +1,9 @@
+$('.main-slider').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false
+})
+
 $('.about-slider').slick({
     infinite: true,
     slidesToShow: 3,

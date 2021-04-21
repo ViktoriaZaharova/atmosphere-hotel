@@ -153,7 +153,24 @@ $(window).scroll(function () {
 
 $('.links-details').on('click', function (e) {
     e.preventDefault();
-    $(this).fadeOut().siblings('.block-hidden-mobile').removeClass('block-hidden-mobile');
+    // $(this).fadeOut().siblings('.block-hidden-mobile').removeClass('block-hidden-mobile');
+
+    var
+        $this = $(this),
+        content = $(this).parents('.wrap');
+
+
+    if(!$this.hasClass('trigger')){
+        $this.addClass('trigger');
+        $this.html('Скрыть');
+
+        content.addClass('click');
+    } else {
+        $this.removeClass('trigger');
+        $this.html('Подробнее');
+
+        content.removeClass('click');
+    }
 });
 
 function initDatepicker() {

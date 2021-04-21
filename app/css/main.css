@@ -1817,7 +1817,12 @@ footer {
       height: 170px;
       z-index: 1;
       background: -webkit-gradient(linear, left bottom, left top, from(white), to(rgba(255, 255, 255, 0)));
-      background: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0) 100%); } }
+      background: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0) 100%); }
+  .wrap.click .block-hidden-mobile {
+    overflow: visible;
+    max-height: none; }
+    .wrap.click .block-hidden-mobile:before {
+      display: none; } }
 
 @media only screen and (max-width: 480px) {
   h1 {

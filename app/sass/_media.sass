@@ -450,6 +450,13 @@
       z-index: 1
       background: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)
 
+  .wrap.click
+    .block-hidden-mobile
+      overflow: visible
+      max-height: none
+      &:before
+        display: none
+
 @media only screen and (max-width: 480px)
   h1
     font-size: 26px

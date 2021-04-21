@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+  <meta charset="utf-8">
+  <title>Отель Атмосфера у самого берега моря</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+  <ul class="menu">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="#">Об отеле</a></li>
+    <li><a href="#">Номера</a></li>
+    <li><a href="#">Акции</a></li>
+    <li><a href="#">Ресторан "Море-мясо"</a></li>
+    <li><a href="#">Кафе "Быстрая устрица"</a></li>
+    <li><a href="#">Бар "Атмосфера"</a></li>
+    <li><a href="#">События</a></li>
+    <li><a href="#">Вакансии</a></li>
+    <li><a href="#">Документы</a></li>
+    <li><a href="#">Забронировать номер</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+  <a href="tel:+78003006550" class="phone">8 800 300 65 50</a>
+</div>
+
+<header>
+  <div class="container">
+    <a href="index.html" class="logo"><img src="img/logo-header.png" alt=""></a>
+    <ul class="menu">
+      <li><a href="#"><span data-hover="Отель">Отель</span></a></li>
+      <li><a href="#"><span data-hover="Номера">Номера</span></a></li>
+      <li><a href="#"><span data-hover="Рестораны">Рестораны</span></a></li>
+      <li><a href="#"><span data-hover="Акции">Акции</span></a></li>
+    </ul>
+
+    <a href="tel:+78003006550" class="phone">8 800 300 65 50</a>
+    <a href="#" class="lang">en</a>
+    <div class="btn-menu">
+      <div class="btn-menu-text">Меню</div>
+      <div class="btn-menu-icon">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="main-slider w-100">
+    <div class="slide">
+      <div class="main-slider-box">
+        <img src="img/bg1.jpg" alt="" class="main-slider-box__img">
+        <div class="container">
+          <h1>Ресторан “Атмосфера”</h1>
+          <a href="#" class="btn btn-border-white">подробнее</a>
+
+          <a href="#about" class="btn-down go_to">Вниз</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="main-slider-box">
+        <img src="img/bg1.jpg" alt="" class="main-slider-box__img">
+        <div class="container">
+          <h1>Ресторан “Атмосфера”</h1>
+          <a href="#" class="btn btn-border-white">подробнее</a>
+
+          <a href="#about" class="btn-down go_to">Вниз</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+<div class="booking-section">
+  <div class="container">
+    <form method="post" class="booking-panel">
+      <div class="booking-panel__text">
+        <h3>Бронирование номеров</h3>
+        <p>100% гарантия лучшей цены!</p>
+      </div>
+      <label class="filter-box">
+        <span class="input-text">Заезд</span>
+        <input type="text" class="from date-input" name="from" value="19.02.2021">
+        <span class="input-icon"><img src="img/calendar.svg" alt=""></span>
+      </label>
+
+      <label class="filter-box">
+        <span class="input-text">Выезд</span>
+        <input type="text" class="to date-input" name="to" value="20.02.2021">
+        <span class="input-icon"><img src="img/calendar.svg" alt=""></span>
+      </label>
+
+      <div class="filter-box dropdown-wrapper">
+        <span class="input-text">Гости</span>
+        <input type="text" name="val" value="1 взрослый, 0 детей">
+        <span class="input-icon"><img src="img/man-user.svg" alt=""></span>
+        <div class="dropdown-menu">
+          <p>Кол-во взрослых</p>
+          <select name="select">
+            <option value="1 взрослый">1 взрослый</option>
+            <option value="2 взрослых">2 взрослых</option>
+            <option value="3 взрослых">3 взрослых</option>
+            <option value="4 взрослых">4 взрослых</option>
+          </select>
+
+          <a href="#" class="btn-add btn btn-border">+ Добавить ребенка</a>
+          <select name="select" class="select-add">
+            <option value="Ребенок 1 год">Ребенок 1 год</option>
+            <option value="Ребенок 1 год">Ребенок 1 год</option>
+            <option value="Ребенок 1 год">Ребенок 1 год</option>
+            <option value="Ребенок 1 год">Ребенок 1 год</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-accent">найти номер</button>
+    </form>
+  </div>
+</div>
+
+
+<section class="restaurant">
+  <div class="container">
+    <h2>Ресторан “Атмосфера”</h2>
+    <div class="box-text">
+      <p>Ресторан "Атмосфера" с легкостью примет до 60 гостей в каждом из залов. Приятная обстановка и легкое
+        музыкальное сопровождение располагают к проведению романтических вечеров, семейных обедов, встреч с друзьями, а
+        так же подходит для проведения банкетов и корпоративных приемов.</p>
+    </div>
+    <div class="button-group">
+      <a href="#" class="btn btn-max btn-border">Меню ресторана</a>
+      <a href="#" class="btn btn-max btn-border color-orange">Меню ресторана</a>
+    </div>
+
+    <div class="about-slider w-100">
+      <div class="slide">
+        <a href="img/photo1.jpg" class="about-slider-img" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+      <div class="slide">
+        <a href="img/photo1.jpg" class="about-slider-img" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+      <div class="slide">
+        <a href="img/photo1.jpg" class="about-slider-img" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+      <div class="slide">
+        <a href="img/photo1.jpg" class="about-slider-img" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="halls">
+  <div class="container">
+    <h2>Залы для мероприятий</h2>
+    <div class="box-text">
+      <p>Ресторан "Атмосфера" с легкостью примет до 60 гостей в каждом из залов. Приятная обстановка и легкое
+        музыкальное сопровождение располагают к проведению романтических вечеров, семейных обедов, встреч с друзьями, а
+        так же подходит для проведения банкетов и корпоративных приемов.</p>
+      <p>Панорамный вид на море, уют, комфорт, хорошая еда, согласитесь, большего сложно желать!</p>
+    </div>
+
+    <div class="wrapper">
+      <div class="halls-box">
+        <div class="area-val">200 м<sup>2</sup></div>
+        <a href="#" class="halls-box__img"><img src="img/restaurant1.jpg" alt=""></a>
+        <div class="halls-box__body">
+          <p>Ресторан "Атмосфера" с легкостью примет до 60 гостей в каждом
+            из залов. Приятная обстановка и легкое музыкальное
+            сопровождение располагают к проведению романтических.</p>
+
+          <a href="#" class="color-orange links-accent">подробнее</a>
+        </div>
+      </div>
+
+      <div class="halls-box">
+        <div class="area-val">160 м<sup>2</sup></div>
+        <a href="#" class="halls-box__img"><img src="img/restaurant2.jpg" alt=""></a>
+        <div class="halls-box__body">
+          <p>Ресторан "Атмосфера" с легкостью примет до 60 гостей в каждом
+            из залов. Приятная обстановка и легкое музыкальное
+            сопровождение располагают к проведению романтических.</p>
+
+          <a href="#" class="color-orange links-accent">подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about corporation-event">
+  <div class="container">
+    <div class="wrapper">
+      <div class="subtitle">Корпоративные мероприятия</div>
+      <div class="box-title">
+
+        <h2>Организация
+          мероприятий
+          на высшем
+          уровне</h2>
+      </div>
+      <div class="box-text">
+        <p>Гостиничный комплекс «Атмосфера» готов организовать мероприятие любого формата:</p>
+        <ul>
+          <li>- кофе-брейки;</li>
+          <li>- фуршеты;</li>
+          <li>- комплексное питание (обеды, ужины);</li>
+          <li>- питание в формате «шведский стол» (обеды, ужины);</li>
+          <li>- банкетное обслуживание;</li>
+          <li>- услуги кейтеринга;</li>
+        </ul>
+        <p>Мы с удовольствием составим меню индивидуально для каждого Гостя с учетом всех пожеланий.</p>
+      </div>
+    </div>
+
+    <div class="about-slider w-100">
+      <div class="slide">
+        <a href="img/photo1.jpg" class="about-slider-img" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+      <div class="slide">
+        <a href="img/photo1.jpg" class="about-slider-img" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+      <div class="slide">
+        <a href="img/photo1.jpg" class="about-slider-img" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+      <div class="slide">
+        <a href="img/photo1.jpg" class="about-slider-img" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about weddings">
+  <div class="container">
+    <div class="wrapper">
+      <div class="subtitle">Свадьбы</div>
+      <div class="box-title">
+
+        <h2>Ваша свадьба
+          в ресторане
+          “Атмосфера”</h2>
+      </div>
+      <div class="box-text">
+        <p>Нет ничего прекраснее дня, когда два влюбленных сердца соединяются узами брака. Свадьба – это серьезный шаг в
+          новое и счастливое будущее.</p>
+
+        <p>Не легко выбрать свадебный банкетный зал, ведь неудачно выбранный ресторан может обернуться испорченным
+          настроением в этот знаменательный день и напрасно потраченными средствами.</p>
+      </div>
+    </div>
+
+    <div class="about-slider w-100">
+      <div class="slide">
+        <a href="img/photo1.jpg" class="about-slider-img" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+      <div class="slide">
+        <a href="img/photo1.jpg" class="about-slider-img" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+      <div class="slide">
+        <a href="img/photo1.jpg" class="about-slider-img" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+      <div class="slide">
+        <a href="img/photo1.jpg" class="about-slider-img" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacts">
+  <div class="container">
+    <h2>Контакты</h2>
+    <div class="wrapper">
+      <div class="contacts-box">
+        <h3>Расположение</h3>
+        <p>г. Геленджик, ул. Шмидта, 1</p>
+      </div>
+      <div class="contacts-box">
+        <h3>Банкетная служба</h3>
+        <a href="mailto:restoranatmosfera@ya.ru">restoranatmosfera@ya.ru</a>
+        <a href="tel:88003006550">8-800-300-65-50</a>
+      </div>
+      <div class="contacts-box">
+        <h3>Социальные сети</h3>
+        <p>Следите за нами в <a href="#" class="link-inline text-decoration">INSTAGRAM</a> и
+          <a href="#" class="link-inline text-decoration">FACEBOOK</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <a href="index.html" class="logo"><img src="img/logo-white.png" alt=""></a>
+    <div class="footer-box">
+      <a href="tel:+78003006550" class="phone">8 800 300 65 50</a>
+      <p>Геленджик, Улица Шмидта, 1</p>
+    </div>
+
+    <a href="#" class="btn btn-border-white">Обратная связь</a>
+
+    <ul class="list-social">
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#socials__instagram"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#socials__fb"></use>
+        </svg>
+      </a></li>
+    </ul>
+
+    <div class="footer-box footer-box-doc">
+      <p>© 2021 Отель Атмосфера ****</p>
+      <p>Создание и поддержка сайта: <a href="#" class="link-inline">Azmarin.Ru</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

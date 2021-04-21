@@ -155,7 +155,7 @@
   <div class="container">
     <div class="about-restaurant-content">
       <h2>Отель Атмосфера</h2>
-      <div class="box-text">
+      <div class="box-text block-hidden-mobile">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum lorem purus, in sollicitudin magna
           cursus eget. Praesent tellus justo, molestie sit amet condimentum vel, faucibus vitae odio. Etiam in lorem
           aliquet, laoreet nibh a, ullamcorper elit. Vestibulum nunc tortor, tempus eu congue et, tincidunt consequat
@@ -171,32 +171,50 @@
           magnis dis parturient montes, nascetur ridiculus mus. Fusce turpis dolor, euismod nec arcu ac, tincidunt
           dictum nulla. Maecenas vitae commodo ex. </p>
       </div>
+
+      <a href="#" class="links-details">Подробнее</a>
     </div>
 
     <div class="about-hotel-info">
       <h3>Контактная информация</h3>
       <ul class="contacts-list">
         <li>
-          <div class="icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#phone"></use></svg></div>
+          <div class="icon">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+          </div>
           <div class="contacts-text">
             <a href="tel:+78003006550">8 800 300 65 50</a>
           </div>
         </li>
         <li>
-          <div class="icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#common__email"></use></svg></div>
+          <div class="icon">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#common__email"></use>
+            </svg>
+          </div>
           <div class="contacts-text">
             <a href="mailto:hotel-atmosfera@yandex.ru">hotel-atmosfera@yandex.ru</a>
           </div>
         </li>
         <li>
-          <div class="icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#clock"></use></svg></div>
+          <div class="icon">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#clock"></use>
+            </svg>
+          </div>
           <div class="contacts-text">
             <p>Время заезда: 14: 00</p>
             <p>Время выезда: 12: 00</p>
           </div>
         </li>
         <li>
-          <div class="icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#common__map-marker"></use></svg></div>
+          <div class="icon">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#common__map-marker"></use>
+            </svg>
+          </div>
           <div class="contacts-text">
             <p>Геленджик, ул. Шмидта 1</p>
           </div>
@@ -209,10 +227,19 @@
 <section class="gallery">
   <div class="container">
     <h2>Фотогалерея</h2>
-    <div class="wrapper">
-      <a href="img/photo1.jpg" class="gallery-item" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
-      <a href="img/photo1.jpg" class="gallery-item" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
-      <a href="img/photo1.jpg" class="gallery-item" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+    <div class="gallery-slider">
+      <div class="slide">
+        <a href="img/photo1.jpg" class="gallery-item" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+      <div class="slide">
+        <a href="img/photo1.jpg" class="gallery-item" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+      <div class="slide">
+        <a href="img/photo1.jpg" class="gallery-item" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
+      <div class="slide">
+        <a href="img/photo1.jpg" class="gallery-item" data-fancybox="gallery"><img src="img/photo1.jpg" alt=""></a>
+      </div>
     </div>
   </div>
 </section>
@@ -222,7 +249,7 @@
 
     <div class="hotel-advantages-content">
       <h2>Для тех кто ценит комфорт</h2>
-      <ul class="list-hotel-advantages">
+      <ul class="list-hotel-advantages block-hidden-mobile">
         <li>
           <div class="icon"><img src="img/wifi.svg" alt=""></div>
           <p>Бесплатный WiFi на территории</p>
@@ -268,37 +295,42 @@
           <p>Бесплатный WiFi на <br>территории</p>
         </li>
       </ul>
+      <a href="#" class="links-details">Подробнее</a>
     </div>
 
     <div class="hotel-location">
       <h3>расположение</h3>
 
-      <div class="hotel-location__item">
-        <div class="icon"><img src="img/plane.svg" alt=""></div>
-        <p>Центр Геленджика  3 км.</p>
+      <div class="hotel-location-wrapper block-hidden-mobile">
+        <div class="hotel-location__item">
+          <div class="icon"><img src="img/plane.svg" alt=""></div>
+          <p>Центр Геленджика 3 км.</p>
+        </div>
+        <div class="hotel-location__item">
+          <div class="icon"><img src="img/plane.svg" alt=""></div>
+          <p>Пляж: 50 метров</p>
+        </div>
+        <div class="hotel-location__item">
+          <div class="icon"><img src="img/plane.svg" alt=""></div>
+          <p>Аэропорт: 6 км.</p>
+        </div>
+        <div class="hotel-location__item">
+          <div class="icon"><img src="img/plane.svg" alt=""></div>
+          <p>Парк им. Лермонтова 1,5 км</p>
+        </div>
+        <div class="hotel-location__item">
+          <div class="icon"><img src="img/plane.svg" alt=""></div>
+          <p>Аэропорт г.Анапы - 3ч.
+            на такси</p>
+        </div>
+        <div class="hotel-location__item">
+          <div class="icon"><img src="img/plane.svg" alt=""></div>
+          <p>ЖД вокзал г.Новороссийска
+            40 мин на такси</p>
+        </div>
+
       </div>
-      <div class="hotel-location__item">
-        <div class="icon"><img src="img/plane.svg" alt=""></div>
-        <p>Пляж: 50 метров</p>
-      </div>
-      <div class="hotel-location__item">
-        <div class="icon"><img src="img/plane.svg" alt=""></div>
-        <p>Аэропорт: 6 км.</p>
-      </div>
-      <div class="hotel-location__item">
-        <div class="icon"><img src="img/plane.svg" alt=""></div>
-        <p>Парк им. Лермонтова 1,5 км</p>
-      </div>
-      <div class="hotel-location__item">
-        <div class="icon"><img src="img/plane.svg" alt=""></div>
-        <p>Аэропорт г.Анапы - 3ч.
-          на такси</p>
-      </div>
-      <div class="hotel-location__item">
-        <div class="icon"><img src="img/plane.svg" alt=""></div>
-        <p>ЖД вокзал г.Новороссийска
-          40 мин на такси</p>
-      </div>
+      <a href="#" class="links-details">Подробнее</a>
     </div>
   </div>
 </section>

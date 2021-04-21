@@ -28,7 +28,8 @@ $('.about-slider').slick({
 });
 
 $('.accommodation-slider').slick({
-    slidesToShow: 3,infinite: true,
+    slidesToShow: 3,
+    infinite: true,
     prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg"><path d="M1.616 1.613a.384.384 0 000 .55l4.937 4.832-4.937 4.842a.384.384 0 000 .55.402.402 0 00.56 0l5.208-5.108a.376.376 0 00.116-.275.392.392 0 00-.116-.275L2.176 1.622a.394.394 0 00-.56-.01z"></path></svg></button>',
     nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg"><path d="M1.616 1.613a.384.384 0 000 .55l4.937 4.832-4.937 4.842a.384.384 0 000 .55.402.402 0 00.56 0l5.208-5.108a.376.376 0 00.116-.275.392.392 0 00-.116-.275L2.176 1.622a.394.394 0 00-.56-.01z"></path></svg></button>',
     dots: true,
@@ -57,6 +58,30 @@ $('.services-slider').slick({
             breakpoint: 480,
             settings: {
                 slidesToShow: 1,
+            }
+        }
+    ]
+});
+
+$('.gallery-slider').slick({
+    slidesToShow: 3,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg"><path d="M1.616 1.613a.384.384 0 000 .55l4.937 4.832-4.937 4.842a.384.384 0 000 .55.402.402 0 00.56 0l5.208-5.108a.376.376 0 00.116-.275.392.392 0 00-.116-.275L2.176 1.622a.394.394 0 00-.56-.01z"></path></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg"><path d="M1.616 1.613a.384.384 0 000 .55l4.937 4.832-4.937 4.842a.384.384 0 000 .55.402.402 0 00.56 0l5.208-5.108a.376.376 0 00.116-.275.392.392 0 00-.116-.275L2.176 1.622a.394.394 0 00-.56-.01z"></path></svg></button>',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                arrows: true
             }
         }
     ]
@@ -124,6 +149,11 @@ $(window).scroll(function () {
     } else {
         $('header').removeClass('fixed');
     }
+});
+
+$('.links-details').on('click', function (e) {
+    e.preventDefault();
+    $(this).fadeOut().siblings('.block-hidden-mobile').removeClass('block-hidden-mobile');
 });
 
 function initDatepicker() {

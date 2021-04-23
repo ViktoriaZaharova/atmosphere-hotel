@@ -1552,10 +1552,13 @@ footer {
     margin: 0 0 39px; }
     .numbers-content .box-text p:last-child {
       margin: 0; }
-  .numbers-content h3 {
-    color: #565656;
-    font-size: 36px;
-    margin: 0 0 30px; }
+
+.numbers-name {
+  color: #565656;
+  font-size: 36px;
+  margin: 0 0 30px; }
+  .numbers-name:hover {
+    color: #e6b361; }
 
 .numbers-details {
   color: #010101;
@@ -1823,11 +1826,11 @@ footer {
     padding: 0;
     margin: 30px 0 0;
     font-size: 16px; }
-    .numbers-content h3 {
-      font-size: 24px;
-      margin: 0 0 20px; }
     .numbers-content .box-text p {
       margin: 0 0 20px; }
+  .numbers-name {
+    font-size: 24px;
+    margin: 0 0 20px; }
   .numbers-option {
     margin: 20px 0; }
   .numbers-gallery {

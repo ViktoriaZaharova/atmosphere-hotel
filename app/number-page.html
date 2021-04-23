@@ -148,7 +148,7 @@
           <ul class="list-hotel-advantages block-hidden-mobile">
             <li>
               <div class="icon"><img src="img/wifi.svg" alt=""></div>
-              <p>Большая кровать King Size
+              <p>Большая кровать King Size <br>
                 (180*200см) / Queen Size (160*200см)</p>
             </li>
             <li>
@@ -173,23 +173,24 @@
             </li>
             <li>
               <div class="icon"><img src="img/wifi.svg" alt=""></div>
-              <p>Бесплатный WiFi на <br>территории</p>
+              <p>Душевая кабина или ванная</p>
             </li>
             <li>
               <div class="icon"><img src="img/wifi.svg" alt=""></div>
-              <p>Бесплатный WiFi на <br>территории</p>
+              <p>Мини-бар</p>
             </li>
             <li>
               <div class="icon"><img src="img/wifi.svg" alt=""></div>
-              <p>Бесплатный WiFi на <br>территории</p>
+              <p>Сейф</p>
             </li>
             <li>
               <div class="icon"><img src="img/wifi.svg" alt=""></div>
-              <p>Бесплатный WiFi на <br>территории</p>
+              <p>Банные принадлежности
+                (полотенца)</p>
             </li>
             <li>
               <div class="icon"><img src="img/wifi.svg" alt=""></div>
-              <p>Бесплатный WiFi на <br>территории</p>
+              <p>WiFi</p>
             </li>
           </ul>
           <a href="#" class="links-details">Подробнее</a>
@@ -197,60 +198,71 @@
       </div>
 
       <div class="photo-gallery-number">
-        <div class="slide"><a href="img/gallery-img2.jpg" data-fancybox="image-photo" class="photo-gallery-number__item"><img src="img/gallery-img2.jpg" alt=""></a></div>
-        <div class="slide"><a href="img/gallery-img2.jpg" data-fancybox="image-photo" class="photo-gallery-number__item"><img src="img/gallery-img2.jpg" alt=""></a></div>
-        <div class="slide"><a href="img/gallery-img2.jpg" data-fancybox="image-photo" class="photo-gallery-number__item"><img src="img/gallery-img2.jpg" alt=""></a></div>
+        <div class="slide"><a href="img/gallery-img2.jpg" data-fancybox="image-photo"
+                              class="photo-gallery-number__item"><img src="img/gallery-img2.jpg" alt=""></a></div>
+        <div class="slide"><a href="img/number-img.jpg" data-fancybox="image-photo"
+                              class="photo-gallery-number__item"><img src="img/number-img.jpg" alt=""></a></div>
+        <div class="slide"><a href="img/gallery-img2.jpg" data-fancybox="image-photo"
+                              class="photo-gallery-number__item"><img src="img/gallery-img2.jpg" alt=""></a></div>
       </div>
     </div>
 
     <div class="sidebar-booking">
-      <div class="sidebar-booking__head">
-        <p>стоимость</p>
-        <div class="price">
-          <p>от</p>
-          <div class="price-val">4800</div>
-          <span>Р /  сутки</span>
-        </div>
-      </div>
-      <div class="sidebar-booking__body">
-        <form method="post" class="booking-panel">
-          <label class="filter-box">
-            <span class="input-text">Дата заезда</span>
-            <input type="text" class="from date-input" name="from" value="19.02.2021">
-            <span class="input-icon"><img src="img/calendar.svg" alt=""></span>
-          </label>
-
-          <label class="filter-box">
-            <span class="input-text">Дата выезда</span>
-            <input type="text" class="to date-input" name="to" value="20.02.2021">
-            <span class="input-icon"><img src="img/calendar.svg" alt=""></span>
-          </label>
-
-          <div class="filter-box dropdown-wrapper">
-            <span class="input-text">Гости</span>
-            <input type="text" name="val" value="1 взрослый, 0 детей">
-            <span class="input-icon"><img src="img/man-user.svg" alt=""></span>
-            <div class="dropdown-menu">
-              <p>Кол-во взрослых</p>
-              <select name="select">
-                <option value="1 взрослый">1 взрослый</option>
-                <option value="2 взрослых">2 взрослых</option>
-                <option value="3 взрослых">3 взрослых</option>
-                <option value="4 взрослых">4 взрослых</option>
-              </select>
-
-              <a href="#" class="btn-add btn btn-border">+ Добавить ребенка</a>
-              <select name="select" class="select-add">
-                <option value="Ребенок 1 год">Ребенок 1 год</option>
-                <option value="Ребенок 1 год">Ребенок 1 год</option>
-                <option value="Ребенок 1 год">Ребенок 1 год</option>
-                <option value="Ребенок 1 год">Ребенок 1 год</option>
-              </select>
-            </div>
+      <div class="sticky-column">
+        <div class="sidebar-booking__head">
+          <p>стоимость</p>
+          <div class="price">
+            <p>от</p>
+            <div class="price-val">4800</div>
+            <span>Р /  сутки</span>
           </div>
+        </div>
+        <div class="sidebar-booking__body">
+          <form method="post" class="booking-panel">
+            <div class="filter-box__wrap">
+              <div class="input-text">Дата заезда</div>
+              <label class="filter-box">
+                <input type="text" class="from date-input" name="from" value="19.02.2021">
+                <span class="input-icon"><img src="img/calendar2.svg" alt=""></span>
+              </label>
+            </div>
+            <div class="filter-box__wrap">
+              <div class="input-text">Дата выезда</div>
+              <label class="filter-box">
+                <input type="text" class="to date-input" name="to" value="20.02.2021">
+                <span class="input-icon"><img src="img/calendar2.svg" alt=""></span>
+              </label>
+            </div>
 
-          <button type="submit" class="btn btn-accent">Забронировать номер</button>
-        </form>
+            <div class="filter-box__wrap">
+              <div class="input-text">Гости</div>
+              <div class="filter-box dropdown-wrapper">
+
+                <span class="input-icon"><img src="img/users.svg" alt=""></span>
+                <input type="text" name="val" value="1 взрослый, 0 детей">
+                <div class="dropdown-menu">
+                  <p>Кол-во взрослых</p>
+                  <select name="select">
+                    <option value="1 взрослый">1 взрослый</option>
+                    <option value="2 взрослых">2 взрослых</option>
+                    <option value="3 взрослых">3 взрослых</option>
+                    <option value="4 взрослых">4 взрослых</option>
+                  </select>
+
+                  <a href="#" class="btn-add btn btn-border">+ Добавить ребенка</a>
+                  <select name="select" class="select-add">
+                    <option value="Ребенок 1 год">Ребенок 1 год</option>
+                    <option value="Ребенок 1 год">Ребенок 1 год</option>
+                    <option value="Ребенок 1 год">Ребенок 1 год</option>
+                    <option value="Ребенок 1 год">Ребенок 1 год</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-accent">Забронировать номер</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>

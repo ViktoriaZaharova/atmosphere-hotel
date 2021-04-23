@@ -123,8 +123,8 @@ $('.numbers-gallery').slick({
 $('.photo-gallery-number').slick({
     slidesToShow: 1,
     fade: true,
-    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="../img/sprite.svg#left"></use></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="../img/sprite.svg#right"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg"><path d="M1.616 1.613a.384.384 0 000 .55l4.937 4.832-4.937 4.842a.384.384 0 000 .55.402.402 0 00.56 0l5.208-5.108a.376.376 0 00.116-.275.392.392 0 00-.116-.275L2.176 1.622a.394.394 0 00-.56-.01z"></path></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg"><path d="M1.616 1.613a.384.384 0 000 .55l4.937 4.832-4.937 4.842a.384.384 0 000 .55.402.402 0 00.56 0l5.208-5.108a.376.376 0 00.116-.275.392.392 0 00-.116-.275L2.176 1.622a.394.394 0 00-.56-.01z"></path></svg></button>',
 });
 
 
@@ -213,6 +213,7 @@ $('.links-details').on('click', function (e) {
         content.removeClass('click');
     }
 });
+
 
 function initDatepicker() {
 

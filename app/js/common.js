@@ -49,6 +49,32 @@ $('.accommodation-slider').slick({
     ]
 });
 
+$('.recommendation-slider').slick({
+    slidesToShow: 3,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    // prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg"><path d="M1.616 1.613a.384.384 0 000 .55l4.937 4.832-4.937 4.842a.384.384 0 000 .55.402.402 0 00.56 0l5.208-5.108a.376.376 0 00.116-.275.392.392 0 00-.116-.275L2.176 1.622a.394.394 0 00-.56-.01z"></path></svg></button>',
+    // nextArrow: '<button type="button" class="slick-next"><svg viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg"><path d="M1.616 1.613a.384.384 0 000 .55l4.937 4.832-4.937 4.842a.384.384 0 000 .55.402.402 0 00.56 0l5.208-5.108a.376.376 0 00.116-.275.392.392 0 00-.116-.275L2.176 1.622a.394.394 0 00-.56-.01z"></path></svg></button>',
+    dots: true,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
+});
+
+
 $('.services-slider').slick({
     slidesToShow: 2,
     prevArrow: '<button type="button" class="slick-prev"><svg viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg"><path d="M1.616 1.613a.384.384 0 000 .55l4.937 4.832-4.937 4.842a.384.384 0 000 .55.402.402 0 00.56 0l5.208-5.108a.376.376 0 00.116-.275.392.392 0 00-.116-.275L2.176 1.622a.394.394 0 00-.56-.01z"></path></svg></button>',
@@ -86,6 +112,21 @@ $('.gallery-slider').slick({
         }
     ]
 });
+
+$('.numbers-gallery').slick({
+    slidesToShow: 1,
+    fade: true,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="../img/sprite.svg#left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="../img/sprite.svg#right"></use></svg></button>',
+});
+
+$('.photo-gallery-number').slick({
+    slidesToShow: 1,
+    fade: true,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="../img/sprite.svg#left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="../img/sprite.svg#right"></use></svg></button>',
+});
+
 
 // slick active
 $(window).on('load resize', function() {

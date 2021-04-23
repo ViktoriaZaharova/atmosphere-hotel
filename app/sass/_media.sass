@@ -57,7 +57,12 @@
   footer
     padding: 30px 0
 
+  .numbers-content
+    padding: 0 0 0 20px
+    width: calc(100% - 500px)
 
+  .numbers-gallery
+    max-width: 500px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
@@ -173,6 +178,25 @@
   .about-restaurant-content, .hotel-advantages-content
     padding: 0 30px 0 0
     width: calc(100% - 260px)
+
+  .numbers-content
+    width: 100%
+    padding: 0
+    margin: 30px 0 0
+    font-size: 16px
+    h3
+      font-size: 24px
+      margin: 0 0 20px
+    .box-text
+      p
+        margin: 0 0 20px
+
+  .numbers-option
+    margin: 20px 0
+
+  .numbers-gallery
+    margin: 0 auto
+    max-width: 700px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 920px)
@@ -291,7 +315,7 @@
     padding: 15px
 
   .restaurant
-    padding: 60px 0
+    padding: 0 0 60px
 
   .halls .box-text, .restaurant .box-text
     font-size: 16px
@@ -320,11 +344,35 @@
       margin: 0 10px 0 0
 
   .about-restaurant
-    padding: 60px 0 40px
+    padding: 0 0 40px
 
   .about-restaurant-content .box-text
     font-size: 16px
 
+  .numbers-gallery .slick-arrow
+    width: 40px
+    height: 25px
+
+  .numbers-gallery .slick-prev
+    left: 20px
+
+  .numbers-gallery .slick-next
+    left: 70px
+
+  .numbers-gallery__item
+    height: 300px
+
+  .numbers-category-item
+    &:nth-child(even)
+      .numbers-gallery .slick-prev
+        left: auto
+        right: 70px
+      .numbers-gallery .slick-next
+        left: auto
+        right: 20px
+
+  .numbers-category
+    padding: 0 0 40px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 630px)

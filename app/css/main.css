@@ -1808,6 +1808,15 @@ footer {
     -o-object-fit: cover;
        object-fit: cover; }
 
+.sticky-column {
+  width: 100%;
+  max-width: 400px; }
+
+.sticky {
+  position: fixed;
+  z-index: 3;
+  top: 78px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1280px) {
@@ -2004,7 +2013,9 @@ footer {
   .photo-gallery-number .slick-prev {
     bottom: 50px; }
   .photo-gallery-number {
-    margin: 40px 0 0; } }
+    margin: 40px 0 0; }
+  .sticky {
+    top: 59px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 920px) {
@@ -2055,6 +2066,11 @@ footer {
       font-size: 24px;
       margin: 0 0 20px; }
   .photo-gallery-number {
+    max-width: none; }
+  .sticky {
+    position: relative;
+    top: 0; }
+  .sticky-column {
     max-width: none; } }
 
 @media only screen and (max-width: 768px) {

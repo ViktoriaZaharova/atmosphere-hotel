@@ -214,6 +214,23 @@ $('.links-details').on('click', function (e) {
     }
 });
 
+// fixed sidebar
+$(function () {
+    var topPos = $('.sticky-column').offset().top;
+    $(window).scroll(function () {
+        var top = $(document).scrollTop(),
+            pip = $('footer, .stop-section').offset().top,
+            height = $('.sticky-column').outerHeight();
+        if (top > topPos && top < pip - height) {
+            $('.sticky-column').addClass('sticky').removeAttr("style");
+        } else if (top > pip - height) {
+            $('.sticky-column').removeClass('sticky').css({'position': 'absolute', 'bottom': '0'});
+        } else {
+            $('.sticky-column').removeClass('sticky');
+        }
+    });
+});
+
 
 function initDatepicker() {
 

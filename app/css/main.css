@@ -1814,8 +1814,7 @@ footer {
 
 .sticky {
   position: fixed;
-  z-index: 3;
-  top: 78px; }
+  z-index: 3; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

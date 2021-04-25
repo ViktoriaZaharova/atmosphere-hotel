@@ -116,8 +116,8 @@ $('.gallery-slider').slick({
 $('.numbers-gallery').slick({
     slidesToShow: 1,
     fade: true,
-    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="../img/sprite.svg#left"></use></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="../img/sprite.svg#right"></use></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#right"></use></svg></button>',
 });
 
 $('.photo-gallery-number').slick({

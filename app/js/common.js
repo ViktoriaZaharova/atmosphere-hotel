@@ -224,7 +224,7 @@ $(function () {
         if (top > topPos && top < pip - height) {
             $('.sticky-column').addClass('sticky').removeAttr("style");
         } else if (top > pip - height) {
-            $('.sticky-column').removeClass('sticky').css({'position': 'absolute', 'bottom': '0'});
+            $('.sticky-column').removeClass('sticky');
         } else {
             $('.sticky-column').removeClass('sticky');
         }

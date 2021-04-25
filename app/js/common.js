@@ -222,7 +222,7 @@ $(function () {
             pip = $('footer, .stop-section').offset().top,
             height = $('.sticky-column').outerHeight();
         if (top > topPos && top < pip - height) {
-            $('.sticky-column').addClass('sticky').removeAttr("style");
+            $('.sticky-column').addClass('sticky');
         } else if (top > pip - height) {
             $('.sticky-column').removeClass('sticky');
         } else {

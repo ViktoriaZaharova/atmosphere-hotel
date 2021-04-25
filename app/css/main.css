@@ -1815,7 +1815,7 @@ footer {
 .sticky {
   position: fixed;
   z-index: 3;
-  top: 0; }
+  top: 78px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -2311,7 +2311,9 @@ footer {
   .characteristics-number li {
     width: 100%; }
   .sidebar-booking__head .price-val {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .main-numbers .main-slider-box {
+    padding: 170px 0 60px; } }
 
 @media only screen and (max-width: 480px) {
   h1 {
